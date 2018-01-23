@@ -25,7 +25,7 @@ section{
 nav ul{
 	height: 100%;
 	display: flex;
-	flex-direction: row wrap;
+	flex-flow: row wrap;
 	justify-content: flex-end;
 	align-items: center;
 	margin: 0;
@@ -444,7 +444,7 @@ h1{
 }
 .stage{
 	width: 100%;
-	height: 10vw;
+	height: 250px;
 	border-radius: 10px;
 	box-shadow:  -1px 9px 7px -7px rgba(141,141,141, 1);
 	display: flex;
@@ -453,12 +453,29 @@ h1{
 	align-items: center;
 }
 .fon-stage{
-	flex: 2;
+	display: flex;
+	flex-grow: 25;
+	border-radius: 10px 10px 0 0;
+	width: 100%;
+	background: radial-gradient(ellipse at center, rgba(228,134,113, 1) 0%, rgba(235,138,117, 1) 80%);
 }
 .inf-stage{
-	flex: 1;
+	display: flex;
+	flex-grow: 1;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
 	background-color: #FFFFFF;
 	border-radius: 0 0 10px 10px;
+	padding: 2% 5%;
+	text-align: justify;
+}
+.inf-stage h4{
+	margin: 0;
+	padding: 0;
+}
+.inf-stage span{
+	color: #8C8C8C;
 }
 .other{
 	width: 100%;
