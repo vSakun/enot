@@ -4,3 +4,9 @@
 	font-style: normal;
 	font-weight: normal;
 }
+@font-face {
+	font-family: "zero5";
+	src: url("../font/zero5.otf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
