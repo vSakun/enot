@@ -8,7 +8,7 @@ a,p,h1,h2,h3,h4,h5,h6,span,li{
 a{
 	text-decoration: none;
 }
-header, section{
+header, section, footer{
 	height: 100vh;
 }
 section{
@@ -781,6 +781,9 @@ h1{
 	animation-direction: alternate;
 	background: radial-gradient(ellipse at center, rgba(103, 189, 221, .4), rgba(103, 189, 180, .4));
 }
+#question .container, #question .row, #question .col-lg-12{
+	height: 100%;
+}
 @keyframes background-linear {
 	0% {
 		opacity: .4;
@@ -802,10 +805,11 @@ h1{
 	height: 100%;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 .care-inf{
-	width: 70%;
+	width: 100%;
+	height: 33%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -821,5 +825,20 @@ h1{
 	width: 30%;
 }
 .care-text{
-	width: 65%;
+	width: 70%;
+}
+.care-text p{
+	color: #797979;
+}
+.care-text span{
+	font-size: 1.1rem;
+	letter-spacing: 1px;
+	color: #00BEDF;
+	text-shadow: 1px 1px 1px #008299;
+}
+/* section capabilities */
+#capabilities{
+	background: url(../img/4683.jpg) no-repeat;
+	background-position: center center;
+	background-size: cover;
 }
