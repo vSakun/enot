@@ -791,7 +791,7 @@ h1{
 	}
 
 	50% {
-		outline: .8;
+		outline: .5;
 		background: radial-gradient(ellipse at center, rgba(103, 189, 221, .4), rgba(103, 189, 180, .4));
 	}
 
@@ -831,10 +831,10 @@ h1{
 	color: #797979;
 }
 .care-text span{
-	font-size: 1.1rem;
+	font-size: 1.2rem;
 	letter-spacing: 1px;
-	color: #00BEDF;
-	text-shadow: 1px 1px 1px #008299;
+	//color: #00BEDF;
+	//text-shadow: 1px 1px 1px #008;
 }
 /* section capabilities */
 #capabilities{
