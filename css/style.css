@@ -181,6 +181,7 @@ h1{
 	font-weight: 300;
 	font-size: 3.375rem;
 	color: #ffffff;
+	letter-spacing: 2px;
 	text-shadow: 1px 1px 1px #007D99;
 }
 .img-blok{
@@ -189,6 +190,7 @@ h1{
 	justify-content: space-around;
 	align-items: center;
 	width: 70%;
+	height: 100%;
 }
 .shape{
 	position: relative;
