@@ -5,6 +5,9 @@
 	body section{
 		padding: 2% 0;
 	}
+	.slider-title .container{
+		padding: 3rem;
+	}
 	.stage .fon-stage img{
 		width: 50%;
 	}
