@@ -48,11 +48,33 @@ function move(){
 	var a1 = an[1];
 	var a2 = an[2];
 	var a3 = an[3];
-	var t = ($(a2).attr('href'));
+	var a4 = an[4];
+	var a5 = an[5];
+	var t0 = ($(a0).attr('href'));
+	var t1 = ($(a1).attr('href'));
+	var t2 = ($(a2).attr('href'));
+	var t3 = ($(a3).attr('href'));
+	var t4 = ($(a4).attr('href'));
+	var t5 = ($(a5).attr('href'));
 	$(window).scroll(function(){
 		var s_top = $(window).scrollTop();
-		if($(t).offset().top == s_top){
-			alert($(t).offset().top);
+		if($(t0).offset().top == s_top){
+		
+		}
+		else if($(t1).offset().top == s_top){
+
+		}
+		else if($(t2).offset().top == s_top){
+			alert($(t2).offset().top);
+		}
+		else if($(t3).offset().top == s_top){
+			alert($(t3).offset().top);
+		}
+		else if($(t4).offset().top == s_top){
+			alert($(t4).offset().top);
+		}
+		else if($(t5).offset().top == s_top){
+			alert($(t5).offset().top);
 		}
 		else{
 
