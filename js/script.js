@@ -41,3 +41,22 @@ function mnuslow(){
 	});
 };
 mnuslow();
+/* перемещение по секциям */
+function move(){
+	var an = $('a[href*="#"]');
+	var a0 = an[0];
+	var a1 = an[1];
+	var a2 = an[2];
+	var a3 = an[3];
+	var t = ($(a2).attr('href'));
+	$(window).scroll(function(){
+		var s_top = $(window).scrollTop();
+		if($(t).offset().top == s_top){
+			alert($(t).offset().top);
+		}
+		else{
+
+		};
+	});
+};
+move();
