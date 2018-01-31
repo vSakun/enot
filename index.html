@@ -15,12 +15,15 @@
 	<link rel="stylesheet" href="libs/bootstrap-4.0.0-dist/css/bootstrap-grid.min.css">
 	<link rel="stylesheet" href="libs/normalize/normalize.css">
 	<link rel="stylesheet" href="libs/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="libs/fullPage/jquery.fullPage.css">
 	<link rel="stylesheet" href="css/media.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<header id="home">
+	<div id="fullpage">
+		<div class="section">
+			<header id="home">
 		<div class="logo-nav">
 			<div class="click-logo">
 				<img src="img/min-logo.png" alt="">
@@ -79,7 +82,9 @@
 			</div>
 		</div>
 	</header>
-	<section id="work-other">
+		</div>
+	<div class="section">
+		<section id="work-other">
 		<h2>Как это работает?</h2>		
 		<div class="work">
 			<div class="container">
@@ -160,7 +165,9 @@
 			</div>
 		</div>
 	</section>
-	<section id="room-cleaning">
+	</div>
+	<div class="section">
+		<section id="room-cleaning">
 		<div class="glass"></div>
 		<div class="rooms-show">
 			<div class="container">
@@ -201,7 +208,9 @@
 			</div>
 		</div>
 	</section>
-	<section id="question">
+	</div>
+	<div class="section">
+		<section id="question">
 		<div class="glass"></div>
 		<div class="container">
 			<div class="row">
@@ -263,7 +272,9 @@
 			</div>
 		</div>
 	</section>
-	<section id="capabilities">
+	</div>
+	<div class="section">
+		<section id="capabilities">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
@@ -286,7 +297,9 @@
 			</div>
 		</div>
 	</section>
-	<footer id="contact">
+	</div>
+	<div class="section">
+		<footer id="contact">
 		<div class="cont">
 			<div class="container">
 				<div class="row">
@@ -329,11 +342,18 @@
 			</div>
 		</div>
 	</footer>
+	</div>
+	
+</div>
 
-</body>
 <script src="libs/jquery-3.3.1/jquery-3.3.1.min.js"></script>
 <script src="libs/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+<script src="libs/fullPage/vendors/jquery.easings.min.js"></script>
+<script src="libs/fullPage/vendors/scrolloverflow.min.js"></script>
+<script src="libs/fullPage/jquery.fullPage.js"></script>
 <script src="js/script.js"></script>
+</body>
+
 
 
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>

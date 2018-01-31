@@ -42,7 +42,7 @@ function mnuslow(){
 };
 mnuslow();
 /* перемещение по секциям */
-function move(){
+/*function move(){
 	var an = $('a[href*="#"]');
 	var a0 = an[0];
 	var a1 = an[1];
@@ -81,4 +81,9 @@ function move(){
 		};
 	});
 };
-move();
+move();*/
+$(document).ready(function() {
+			$('#fullpage').fullpage({
+				scrollBar: true,
+			});
+		});  
