@@ -32,9 +32,15 @@
 	}
 }
 @media only screen and (max-width : 1200px) {
-
+	header .logo-nav nav a{
+		padding: 0 .5rem;
+	}
 }
-
+@media only screen and (max-width : 1050px) {
+	html{
+		font-size: 11px;
+	}
+}
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
 	
