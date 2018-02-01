@@ -929,6 +929,7 @@ h1{
 .capab-text img{
 	display: block;
 	width: 80%;
+	height: 60%;
 	margin: 0;
 	padding: 0;
 	border-radius: 10px;
