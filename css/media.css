@@ -137,6 +137,9 @@
   #capabilities .table-capab{
   	height: 100%;
   }
+  .slider-title .slide-1 .row .col-lg-10{
+    align-items: center;
+	}
 
 	/*Disable Animation on Mobile Devices*/
 	.animated {
@@ -169,6 +172,13 @@
 		padding: 10px 0;
 		width: 15%;
 		order: 1;
+		position: absolute;
+	}
+	.slide-1 .col-sm-1:first-child{
+		left: 10px;
+	}
+	.slide-1 .col-sm-1:last-child{
+		right: 10px;
 	}
 	.slide-1 .col-sm-10{
 		order: 2;
@@ -216,10 +226,6 @@
 	}
 	.slide-1 .bottom-order {
     width: 43%;
-	}
-	.slider-title .slide-1 .row .col-lg-10{
-    justify-content: space-between;
-    align-items: center;
 	}
 	.inf-room .descr-bottom .bottom-order {
     width: 38%;
