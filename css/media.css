@@ -134,6 +134,9 @@
 		font-size: 1.5rem;
 		margin: 10px 0;
   }
+  #capabilities .table-capab{
+  	height: 100%;
+  }
 
 	/*Disable Animation on Mobile Devices*/
 	.animated {
