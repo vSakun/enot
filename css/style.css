@@ -1170,28 +1170,54 @@ footer{
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
+	background: rgba(0,0,0, 0.2);
 	font-size: 4rem;
+	border: 1px solid rgba(0,0,0, 0.2);
+	box-shadow: 0px 0px 10px 1px rgba(0,0,0, 0.2), inset 0 0 15px 0px rgba(0,0,0, 0.2);
+	border-radius: 15px;
 }
 .soc-link .fa{
+	width: 7%;
+	position: relative;
 	cursor: pointer;
-	color: #FFFFFF;
-	transition: color .5s, text-shadow .5s;
+	padding: 1rem;
 	text-shadow: -1px -1px #444, 0 1px 0 #797979;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	transition: text-shadow .5s;
+}
+.fa-vk{
+	color: rgba(80,119,160, .8);
+	transition: color .5s;
 }
 .fa-vk:hover{
 	color: #5077A0;
 	text-shadow: 1px 1px 1px silver, -1px 1px 1px silver;
 	transition: color .5s, text-shadow .5s;
 }
+.fa-odnoklassniki{
+	color: rgba(250,139,16, .8);
+	transition: color .5s;
+}
 .fa-odnoklassniki:hover{
 	color: #FA8B10;
 	text-shadow: 1px 1px 1px silver, -1px 1px 1px silver;
 	transition: color .5s, text-shadow .5s;
 }
+.fa-facebook{
+	color: rgba(59,89,152, .8);
+	transition: color .5s;
+}
 .fa-facebook:hover{
 	color: #3B5998;
 	text-shadow: 1px 1px 1px silver, -1px 1px 1px silver;
 	transition: color .5s, text-shadow .5s;
+}
+.fa-instagram{
+	color: rgba(205,72,107, .8);
+	transition: color .5s;
 }
 .fa-instagram:hover{
 	color: #CD486B;

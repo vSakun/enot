@@ -95,7 +95,7 @@ function windowSize(){
 		}); 
 	}
 	else if($(window).width() < 618){
-		return false;
+		$(window).on('load resize',windowSize);
 	}
 };
 $(window).on('load resize',windowSize);
