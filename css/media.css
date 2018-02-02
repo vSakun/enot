@@ -195,7 +195,6 @@
   .inf-room .inf-room-img p{
   	margin: 0;
   	padding: 10px 0;
-  	//font-size: 1.1rem;
   }
   .block-table .mnu-room{
   	height: 15%;
@@ -211,6 +210,16 @@
 @media only screen and (max-width : 495px) {
 	header nav a {
     font-size: .8rem;
+	}
+	.slide-1 .bottom-order {
+    width: 43%;
+	}
+	.slider-title .slide-1 .row .col-lg-10{
+    justify-content: space-between;
+    align-items: center;
+	}
+	.inf-room .descr-bottom .bottom-order {
+    width: 38%;
 	}
 }
 /* Custom, iPhone Retina */
