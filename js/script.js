@@ -82,10 +82,20 @@ mnuslow();
 	});
 };
 move();*/
-$(document).ready(function() {
+ 
+/* ОТслеживание ширины окна браузера */
+function windowSize(){
+	if($(window).width() > 618){
+		$(document).ready(function() {
 			$('#fullpage').fullpage({
 				scrollBar: true,
 				navigation: true,
-		navigationPosition: 'right',
+				navigationPosition: 'right',
 			});
-		});  
+		}); 
+	}
+	else if($(window).width() < 618){
+		return false;
+	}
+};
+$(window).on('load resize',windowSize);

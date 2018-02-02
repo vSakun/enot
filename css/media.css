@@ -58,7 +58,7 @@
 		padding: 3px 0;
 	}
 	header nav a{
-		font-size: 1.2rem;
+		font-size: 1rem;
 	}
 	header nav a span{
 		display: none;
@@ -101,7 +101,39 @@
   }
 }
 @media only screen and (max-width : 618px) {
-	
+	body header, body section, body footer{
+		height: 100%;
+	}
+	.work .stage{
+		margin: 10px auto;
+	}
+	#home .logo-nav{
+		height: 7%;
+	}
+	#home .logo-nav-width{
+		height: 50px;
+	}
+	.table-capab .nmu-capab li{
+		font-size: 1.2rem;
+	}
+	footer .contact-block{
+  	position: relative;
+  }
+  .contact-block img{
+  	width: 20%;
+  	height: auto;
+  }
+  .foot-img img{
+  	width: 50%;
+  }
+  footer input, footer label{
+  	margin: 5px;
+  	line-height: 1.5;
+  }
+  footer .foot-form .bottom-order{
+		font-size: 1.5rem;
+		margin: 10px 0;
+  }
 
 	/*Disable Animation on Mobile Devices*/
 	.animated {
@@ -126,8 +158,60 @@
 	}
 	
 }
+@media only screen and (max-width : 575px) {
+	 p, span, h4{
+		font-size: 1.2rem;
+	}
+	.slide-1 .col-sm-1{
+		padding: 10px 0;
+		width: 15%;
+		order: 1;
+	}
+	.slide-1 .col-sm-10{
+		order: 2;
+	}
+	.other .block-advantages{
+		padding: 10px 0;
+	}
+	.other .block-advantages img{
+		width: 20%;
+	}
+	.care .care-inf{
+		margin: 10px 0;
+	}
+	.rooms-show .block-table{
+		height: 100%;
+	}
+	.inf-room .centr-inf-room{
+		height: 90%;
+	}
+	.centr-inf-room .room-img{
+		display: none;
+	}
+	.inf-room .inf-room-img {
+    width: 90%;
+    margin: 2rem 0;
+  }
+  .inf-room .inf-room-img p{
+  	margin: 0;
+  	padding: 10px 0;
+  	//font-size: 1.1rem;
+  }
+  .block-table .mnu-room{
+  	height: 15%;
+  }
+  .block-table .inf-room{
+  	height: 85%;
+  }
+  .inf-room .descr-bottom .bottom-order{
+  	height: 80%;
+  	width: 34%;
+  }
+}
 @media only screen and (max-width : 495px) {
-	
+	header nav a {
+    font-size: .8rem;
+	}
 }
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {

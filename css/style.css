@@ -76,6 +76,15 @@ section{
 	display: block;
 	position: relative;
 }
+.logo a{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+
+}
 .logo img{
 	display: block;
 	width: 77%;
@@ -929,7 +938,6 @@ h1{
 .capab-text img{
 	display: block;
 	width: 80%;
-	height: 60%;
 	margin: 0;
 	padding: 0;
 	border-radius: 10px;
