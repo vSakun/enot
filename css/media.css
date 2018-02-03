@@ -107,10 +107,15 @@
 	.rooms-show .block-table{
 		height: 80%;
 	}
+	.contact-block .soc-link{
+		width: 50%;
+	}
 }
 @media only screen and (max-width : 618px) {
 	body header, body section, body footer{
 		height: 100%;
+	}
+	body section{
 		padding: 10% 0;
 	}
 	.work .stage{
