@@ -3,7 +3,7 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1366px) {
 	body section{
-		padding: 10% 0;
+		padding: 1% 0;
 	}
 	.slider-title .container{
 		padding: 3rem;
@@ -111,6 +111,7 @@
 @media only screen and (max-width : 618px) {
 	body header, body section, body footer{
 		height: 100%;
+		padding: 10% 0;
 	}
 	.work .stage{
 		margin: 10px auto;
@@ -147,6 +148,9 @@
 	}
 	.slider-title .slide-1 .row .col-lg-10{
 		align-items: center;
+	}
+	.contact-block .soc-link{
+		font-size: 3rem;
 	}
 
 	/*Disable Animation on Mobile Devices*/
