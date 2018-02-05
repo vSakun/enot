@@ -72,8 +72,8 @@ function foolSlider(){
 				$(allSlide[1]).animate({opacity: '1'}, 1000).addClass("slide-activ");
 				$(".abs-fon").fadeIn(1000);
 				setTimeout(function (){
-				$(".slider-title").removeClass("slider-title-sl2");
-				$(".slider-title").addClass("slider-title-sl3");
+				$(".bgi").removeClass("bgi-sl2");
+				$(".bgi").addClass("bgi-sl3");
 				}, 1000);
 				$(".abs-fon").fadeOut(1000);
 			}
@@ -82,8 +82,8 @@ function foolSlider(){
 				$(allSlide[2]).animate({opacity: '1'}, 1000).addClass("slide-activ");
 				$(".abs-fon").fadeIn(1000);
 				setTimeout(function (){
-				$(".slider-title").removeClass("slider-title-sl3");
-				$(".slider-title").addClass("slider-title-sl2");
+				$(".bgi").removeClass("bgi-sl3");
+				$(".bgi").addClass("bgi-sl2");
 				}, 1000);
 				$(".abs-fon").fadeOut(1000);
 			}
@@ -92,7 +92,7 @@ function foolSlider(){
 				$(allSlide[0]).animate({opacity: '1'}, 1000).addClass("slide-activ");
 				$(".abs-fon").fadeIn(1000);
 				setTimeout(function (){
-				$(".slider-title").removeClass("slider-title-sl3 slider-title-sl2");
+				$(".bgi").removeClass("bgi-sl3 bgi-sl2");
 				}, 1000);
 				$(".abs-fon").fadeOut(1000);
 			}
@@ -109,8 +109,8 @@ function foolSlider(){
 				$(allSlide[2]).animate({opacity: '1'}, 1000).addClass("slide-activ");
 				$(".abs-fon").fadeIn(1000);
 				setTimeout(function (){
-				$(".slider-title").removeClass("slider-title-sl3");
-				$(".slider-title").addClass("slider-title-sl2");
+				$(".bgi").removeClass("bgi-sl3");
+				$(".bgi").addClass("bgi-sl2");
 				}, 1000);
 				$(".abs-fon").fadeOut(1000);
 			}
@@ -119,7 +119,7 @@ function foolSlider(){
 				$(allSlide[0]).animate({opacity: '1'}, 1000).addClass("slide-activ");
 				$(".abs-fon").fadeIn(1000);
 				setTimeout(function (){
-				$(".slider-title").removeClass("slider-title-sl3 slider-title-sl2");
+				$(".bgi").removeClass("bgi-sl3 bgi-sl2");
 				}, 1000);
 				$(".abs-fon").fadeOut(1000);
 			}
@@ -128,8 +128,8 @@ function foolSlider(){
 				$(allSlide[1]).animate({opacity:'1'}, 1000).addClass("slide-activ");
 				$(".abs-fon").fadeIn(1000);
 				setTimeout(function (){
-				$(".slider-title").removeClass("slider-title-sl2");
-				$(".slider-title").addClass("slider-title-sl3");
+				$(".bgi").removeClass("bgi-sl2");
+				$(".bgi").addClass("bgi-sl3");
 				}, 1000);
 				$(".abs-fon").fadeOut(1000);
 			}
