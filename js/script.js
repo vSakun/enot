@@ -141,3 +141,13 @@ function foolSlider(){
 	});
 };
 foolSlider();
+$(window).load(function(){
+	$("#work-other h2").animated("zoomIn", "zoomOut");
+	$(".stage").animated("fadeInLeft", "fadeOutRight");
+	$(".other").animated("fadeInRight","fadeOutLeft");
+	$(".block-table").animated("zoomIn","zoomOut");
+	$(".anim-l1, .anim-l2").animated("fadeInLeft","fadeOutRight");
+	$(".anim-r").animated("fadeInRight","fadeOutLeft");
+	$(".care-inf img").animated("bounceIn","bounceOut");
+	$(".table-capab").animated("rotateIn","rotateOut");
+});

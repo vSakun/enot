@@ -1,6 +1,7 @@
 html, body{
 	width: 100%;
 	height: 100%;
+	overflow: hidden;
 }
 a,p,h1,h2,h3,h4,h5,h6,span,li{
 	font-family: zero5;
@@ -13,6 +14,7 @@ a{
 }
 header, section, footer{
 	height: 100vh;
+	overflow: hidden;
 }
 section{
 	padding: 5% 0;
@@ -1326,4 +1328,44 @@ footer{
 	color: #CD486B;
 	text-shadow: 1px 1px 1px silver, -1px 1px 1px silver;
 	transition: color .5s, text-shadow .5s;
+}
+.st1{
+	animation-duration: 1s;
+	animation-delay: .2s;
+}
+.st2{
+	animation-duration: 1s;
+	animation-delay: .7s;
+}
+.st3{
+	animation-duration: 1s;
+	animation-delay: 1.2s;
+}
+.other{
+	animation-duration: 1s;
+	animation-delay: .6s;
+}
+.anim-l1{
+	animation-duration: 1s;
+	animation-delay: .2s;
+}
+.anim-l2{
+	animation-duration: 1s;
+	animation-delay: 1s;
+}
+.anim-r{
+	animation-duration: 1s;
+	animation-delay: .6s;
+}
+.care-inf:nth-child(1) img{
+	animation-duration: 1s;
+	animation-delay: 1.1s;
+}
+.care-inf:nth-child(2) img{
+	animation-duration: 1s;
+	animation-delay: 1.5s;
+}
+.care-inf:nth-child(3) img{
+	animation-duration: 1s;
+	animation-delay: 1.9s;
 }
