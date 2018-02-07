@@ -1369,3 +1369,15 @@ footer{
 	animation-duration: 1s;
 	animation-delay: 1.9s;
 }
+.inf-cont{
+	animation-duration: 2s;
+	animation-delay: .1s;
+}
+.foot-img{
+	animation-duration: 2s;
+	animation-delay: .5s;
+}
+.foot-form{
+	animation-duration: 2s;
+	animation-delay: .1s;
+}

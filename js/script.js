@@ -149,5 +149,8 @@ $(window).load(function(){
 	$(".anim-l1, .anim-l2").animated("fadeInLeft","fadeOutRight");
 	$(".anim-r").animated("fadeInRight","fadeOutLeft");
 	$(".care-inf img").animated("bounceIn","bounceOut");
-	$(".table-capab").animated("rotateIn","rotateOut");
+	$(".table-capab").animated("bounceInDown","bounceOutDown");
+	$(".inf-cont").animated("bounceInLeft","bounceOutLeft");
+	$(".foot-img").animated("fadeIn","fadeOut");
+	$(".foot-form").animated("bounceInRight","bounceOutRight");
 });
