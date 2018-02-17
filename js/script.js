@@ -12,7 +12,7 @@ $(document).ready(function(){
 /*Прилипание блока к верхнему краю экрана 
 при прокручивании до него, а так же описание поведения верхнего меню*/
 var objToStick = $("nav"); //Получаем нужный объект
-var topOfObjToStick = $(objToStick).offset().top; //Получаем начальное расположение нашего блока
+var topOfObjToStick = $(objToStick).scrollTop(); //Получаем начальное расположение нашего блока
 
 $(window).scroll(function () {
 	var windowScroll = $(window).scrollTop(); //Получаем величину, показывающую на сколько прокручено окно
@@ -153,4 +153,9 @@ $(window).load(function(){
 	$(".inf-cont").animated("bounceInLeft","bounceOutLeft");
 	$(".foot-img").animated("fadeIn","fadeOut");
 	$(".foot-form").animated("bounceInRight","bounceOutRight");
+});
+/* Прилоадер */
+$(window).load(function(){
+	$(".loader_inner").fadeOut();
+	$(".loader").delay(250).fadeOut("slow");
 });

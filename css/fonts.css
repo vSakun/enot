@@ -10,3 +10,15 @@
 	font-style: normal;
 	font-weight: normal;
 }
+@font-face {
+	font-family: "futuris-cyrillic";
+	src: url("../font/futuris-cyrillic.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "micra-bold";
+	src: url("../font/micra-bold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
