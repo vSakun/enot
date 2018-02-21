@@ -44,9 +44,9 @@ function mnuslow(){
 };
 mnuslow();
  
-/* ОТслеживание ширины окна браузера */
+/* ОТслеживание ширины и высоты окна браузера */
 function windowSize(){
-	if($(window).width() > 618){
+	if($(window).width() > 618 && $(window).height() > 520){
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
 				scrollBar: true,
@@ -55,7 +55,7 @@ function windowSize(){
 			});
 		}); 
 	}
-	else if($(window).width() < 618){
+	else if($(window).width() < 618 && $(window).height() < 520){
 		$(window).on('load resize',windowSize);
 	}
 };
