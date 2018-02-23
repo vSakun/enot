@@ -270,9 +270,34 @@
 	.shape{
 		display: none;
 	}
+	.table-capab .capab-text img{
+		margin: 10px 0 10px 0;
+	}
+	header .logo img{
+		width: 50%;
+	}
+}
+@media only screen and (max-height : 520px) {
 	.col-sm-10{
 		flex: none;
 		max-width: none;
+	}
+	.slide-1 .bottom-order{
+		width: 25%;
+	}
+	.inf-room .descr-bottom .bottom-order{
+		width: 25%;
+	}
+	.cont .row .foot-img{
+		height: auto;
+	}
+	.cont .row .inf-cont{
+		height: auto;
+	}
+}
+@media only screen and (max-height : 450px) {
+	header .logo img{
+		width: 30%;
 	}
 }
 /* Extra Small Devices, Phones */
