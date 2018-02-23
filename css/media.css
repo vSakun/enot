@@ -193,7 +193,7 @@
 		padding: 10px 0;
 		width: 15%;
 		order: 1;
-		position: absolute;
+		//position: absolute;
 	}
 	.slide-1 .col-sm-1:first-child{
 		left: 10px;
