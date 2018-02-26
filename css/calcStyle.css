@@ -14,6 +14,8 @@ a{
 }
 section{
 	padding: 5% 0;
+	min-height: 1000px;
+	z-index: 1;
 }
 .phone-mail{
 	width: 100%;
@@ -23,7 +25,7 @@ section{
 	background: rgba(255,255,255, .8);
 	box-shadow: 1px 1px 3px #000000;
 	display: flex;
-	margin: 15px 0;
+	margin: 15px 0 0 0;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
@@ -61,6 +63,7 @@ section{
 }
 .logo-nav{
 	height: 100px;
+	background-color: #FCFCFC;
 	box-shadow: 2px 2px 5px #666666;
 }
 .logo-nav .container, .logo-nav .row{
