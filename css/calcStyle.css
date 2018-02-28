@@ -20,7 +20,7 @@ h1,h2,h3,h4,h5,h6,span,li,a{
 a{
 	text-decoration: none;
 }
-header{
+body header{
 	height: 15%;
 	z-index: 1;
 }
