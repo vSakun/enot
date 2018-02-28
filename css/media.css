@@ -185,6 +185,9 @@
 	p, span, h4{
 		font-size: 1.2rem;
 	}
+	header .phone-mail a span{
+		font-size: 1.2rem;
+	}
 	.img-blok .shape{
 		width: 13vw;
 		height: 13vw;
@@ -243,6 +246,9 @@
 	.inf-room .descr-bottom .bottom-order a, .slide-1 .bottom-order a{
 		font-size: 1.2rem;
 	}
+	section .contact-block .soc-link{
+		width: 50%;
+	}
 }
 @media only screen and (max-width : 495px),(max-height : 520px) {
 	header nav a {
@@ -260,6 +266,9 @@
 	}
 	.inf-room .descr-bottom .bottom-order a, .slide-1 .bottom-order a{
 		font-size: 1rem;
+	}
+	section .contact-block .soc-link{
+		width: 100%;
 	}
 }
 /* Custom, iPhone Retina */
