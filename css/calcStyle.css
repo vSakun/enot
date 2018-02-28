@@ -1,6 +1,5 @@
 html, body{
 	width: 100%;
-	height: auto;
 	//overflow: hidden;
 }
 body{
@@ -81,7 +80,7 @@ body section{
 	color: rgba(228,134,113, 1);
 }
 #home .logo-nav{
-	height: 66%;
+	height: 67px;
 	background-color: #FCFCFC;
 	box-shadow: 2px 2px 5px #666666;
 }
