@@ -13,6 +13,12 @@ body{
 }
 p{
 	font-family: zero5;
+	line-height: 1.7rem;
+	color: #4D4D4D;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin: 0;
+	padding: 5px 0 0 0;
 }
 h1,h2,h3,h4,h5,h6,span,li,a{
 	font-family: futuris-cyrillic;
@@ -21,13 +27,13 @@ a{
 	text-decoration: none;
 }
 body header{
-	height: 15%;
+	height: 16%;
 	z-index: 1;
 }
 section{
-	padding: 5% 0;
+	padding: 2.5% 0;
+	margin: 2.5% 0;
 	min-height: 700px;
-	background-clip: border-box;
 	background: radial-gradient(ellipse at center, rgba(103, 189, 221, .5), rgba(103, 189, 150, .5));
 }
 .phone-mail{
@@ -75,7 +81,7 @@ section{
 	color: rgba(228,134,113, 1);
 }
 #home .logo-nav{
-	height: 67%;
+	height: 66%;
 	background-color: #FCFCFC;
 	box-shadow: 2px 2px 5px #666666;
 }
@@ -170,31 +176,17 @@ header nav a span{
 	font-weight: 300;
 	font-size: .8rem;
 }
-/* Footer */
 .contact-block{
 	width: 100%;
-	height: 100px;
-	box-shadow: 0px -1px 3px #000000;
-	background-color: rgba(43,44,45, .5);
-}
-.contact-block .container, .contact-block .row{
-	height: 100%;
-}
-.contact-block .col-lg-12, .contact-block .col-sm-12{
-	height: 100%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
 }
 .contact-block img{
 	display: block;
-	height: 100%;
+	width: 100%;
 }
-.soc-link{
-	width: 20%;
+.contact-block .soc-link{
+	width: 100%;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
 	background: rgba(0,0,0, 0.2);
@@ -202,6 +194,12 @@ header nav a span{
 	border: 1px solid rgba(0,0,0, 0.2);
 	box-shadow: 0px 0px 10px 1px rgba(0,0,0, 0.2), inset 0 0 15px 0px rgba(0,0,0, 0.2);
 	border-radius: 15px;
+}
+.soc-items{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
 }
 .soc-link .fa{
 	width: 7%;
@@ -250,4 +248,27 @@ header nav a span{
 	color: #ED414B;
 	text-shadow: 1px 1px 1px silver, -1px 1px 1px silver;
 	transition: color .5s, text-shadow .5s;
+}
+.inf-contact{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: stretch;
+}
+h2{
+	letter-spacing: 2px;
+	text-align: center;
+	color: #4D4D4D;
+	text-shadow: -1px -1px #444, 0 1px 0 #797979;
+	font-weight: 900;
+	font-size: 2rem;
+	margin: 0;
+	padding: 0;
+}
+/* Footer */
+footer{
+	width: 100%;
+	height: 100px;
+	box-shadow: 0px -1px 3px #000000;
+	background-color: rgba(43,44,45, .5);
 }
