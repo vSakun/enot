@@ -74,7 +74,7 @@ section{
 	padding:0 .2rem 0 0;
 	color: rgba(228,134,113, 1);
 }
-#home .logo-nav{
+.logo-nav{
 	height: 67%;
 	background-color: #FCFCFC;
 	box-shadow: 2px 2px 5px #666666;
