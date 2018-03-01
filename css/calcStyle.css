@@ -173,6 +173,7 @@ header nav a span{
 }
 .contact-block{
 	width: 100%;
+	margin: 1rem 0;
 }
 .contact-block img{
 	display: block;

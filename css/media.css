@@ -246,9 +246,6 @@
 	.inf-room .descr-bottom .bottom-order a, .slide-1 .bottom-order a{
 		font-size: 1.2rem;
 	}
-	section .contact-block .soc-link{
-		width: 50%;
-	}
 }
 @media only screen and (max-width : 495px),(max-height : 520px) {
 	header nav a {
