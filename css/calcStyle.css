@@ -250,17 +250,34 @@ header nav a span{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	align-items: stretch;
+	align-items: center;
 }
 h2{
+	position: relative;
 	letter-spacing: 2px;
 	text-align: center;
-	color: #4D4D4D;
-	text-shadow: -1px -1px #444, 0 1px 0 #797979;
+	color: rgba(228,134,113, 1);
+	text-shadow: 1px 1px 1px #444;
 	font-weight: 900;
 	font-size: 2rem;
 	margin: 0;
 	padding: 0;
+}
+h2::before, h2::after{
+	position: absolute;
+	top: 50%;
+	content: "";
+	width: 10%;
+	height: 3px;
+	background-color: rgba(228,134,113, 1);
+	border-radius: 5px;
+	box-shadow: 1px 1px 1px #444;
+}
+h2::after{
+	right: -3rem;
+}
+h2::before{
+	left: -3rem;
 }
 /* Footer */
 body footer{
