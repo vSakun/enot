@@ -558,16 +558,16 @@ header nav a span{
 	background-color: #FFFFFF;
 	border-radius: 0 0 10px 10px;
 	padding: 10px 5%;
-	text-align: justify;
+	text-align: center;
 }
 .inf-stage h4{
 	margin: 0;
 	padding: 0 0 10px 0;
-	font-weight: 100;
 }
 .inf-stage span{
 	color: #8C8C8C;
 	font-weight: 100;
+	font-family: zero5;
 }
 .other{
 	width: 100%;
@@ -847,7 +847,7 @@ header nav a span{
 }
 /* section capabilities */
 #capabilities{
-	background: url(../img/carpet.jpg) no-repeat;
+	background: url(../img/5709.jpg) no-repeat;
 	background-position: center center;
 	background-size: cover;
 	display: flex;
