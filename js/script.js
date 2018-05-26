@@ -43,7 +43,7 @@ function mnuslow(){
 	});
 };
 mnuslow();
- 
+
 /* ОТслеживание ширины и высоты окна браузера */
 function windowSize(){
 	if($(window).width() > 618 && $(window).height() > 520){
@@ -72,8 +72,8 @@ function foolSlider(){
 				$(allSlide[1]).animate({opacity: '1'}, 1000).addClass("slide-activ");
 				$(".abs-fon").fadeIn(1000);
 				setTimeout(function (){
-				$(".bgi").removeClass("bgi-sl2");
-				$(".bgi").addClass("bgi-sl3");
+					$(".bgi").removeClass("bgi-sl2");
+					$(".bgi").addClass("bgi-sl3");
 				}, 1000);
 				$(".abs-fon").fadeOut(1000);
 			}
@@ -82,8 +82,8 @@ function foolSlider(){
 				$(allSlide[2]).animate({opacity: '1'}, 1000).addClass("slide-activ");
 				$(".abs-fon").fadeIn(1000);
 				setTimeout(function (){
-				$(".bgi").removeClass("bgi-sl3");
-				$(".bgi").addClass("bgi-sl2");
+					$(".bgi").removeClass("bgi-sl3");
+					$(".bgi").addClass("bgi-sl2");
 				}, 1000);
 				$(".abs-fon").fadeOut(1000);
 			}
@@ -92,7 +92,7 @@ function foolSlider(){
 				$(allSlide[0]).animate({opacity: '1'}, 1000).addClass("slide-activ");
 				$(".abs-fon").fadeIn(1000);
 				setTimeout(function (){
-				$(".bgi").removeClass("bgi-sl3 bgi-sl2");
+					$(".bgi").removeClass("bgi-sl3 bgi-sl2");
 				}, 1000);
 				$(".abs-fon").fadeOut(1000);
 			}
@@ -109,8 +109,8 @@ function foolSlider(){
 				$(allSlide[2]).animate({opacity: '1'}, 1000).addClass("slide-activ");
 				$(".abs-fon").fadeIn(1000);
 				setTimeout(function (){
-				$(".bgi").removeClass("bgi-sl3");
-				$(".bgi").addClass("bgi-sl2");
+					$(".bgi").removeClass("bgi-sl3");
+					$(".bgi").addClass("bgi-sl2");
 				}, 1000);
 				$(".abs-fon").fadeOut(1000);
 			}
@@ -119,7 +119,7 @@ function foolSlider(){
 				$(allSlide[0]).animate({opacity: '1'}, 1000).addClass("slide-activ");
 				$(".abs-fon").fadeIn(1000);
 				setTimeout(function (){
-				$(".bgi").removeClass("bgi-sl3 bgi-sl2");
+					$(".bgi").removeClass("bgi-sl3 bgi-sl2");
 				}, 1000);
 				$(".abs-fon").fadeOut(1000);
 			}
@@ -128,8 +128,8 @@ function foolSlider(){
 				$(allSlide[1]).animate({opacity:'1'}, 1000).addClass("slide-activ");
 				$(".abs-fon").fadeIn(1000);
 				setTimeout(function (){
-				$(".bgi").removeClass("bgi-sl2");
-				$(".bgi").addClass("bgi-sl3");
+					$(".bgi").removeClass("bgi-sl2");
+					$(".bgi").addClass("bgi-sl3");
 				}, 1000);
 				$(".abs-fon").fadeOut(1000);
 			}
@@ -141,6 +141,35 @@ function foolSlider(){
 	});
 };
 foolSlider();
+//Слайдер уборок
+var slideIndex=1;
+showSlides(slideIndex);
+function plusSlides(n) {
+	showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+	showSlides(slideIndex = n);
+}
+function showSlides(n) {
+	var i;
+	var slides = $(".capab-text");
+	var dots = $(".nmu-capab li");
+
+	if (n > slides.length) {
+		slideIndex = 1
+	}
+	if (n < 1){
+		slideIndex = slides.length
+	}
+	for (i = 0; i < slides.length; i++){
+		slides[i].style.display = "none";
+	}
+	for (i = 0; i < dots.length; i++){
+		dots[i].className = dots[i].className.replace("activ-tab-room","");   
+	}
+	slides[slideIndex - 1].style.display = "flex";
+	dots[slideIndex - 1].className += " activ-tab-room";
+}
 $(window).load(function(){
 	$("#work-other h2").animated("zoomIn", "zoomOut");
 	$(".stage").animated("fadeInLeft", "fadeOutRight");
