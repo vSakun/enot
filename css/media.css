@@ -47,7 +47,10 @@
 }
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-	
+	.capab-text .bottom-order{
+		width: 28%;
+		height: 9%;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -145,7 +148,7 @@
 		margin: 10px 0;
 	}
 	#capabilities .table-capab{
-		height: 100%;
+		height: 60vh;
 	}
 	.slider-title .slide-1 .row .col-lg-10{
 		align-items: center;
@@ -241,6 +244,13 @@
 	}
 	.inf-room .descr-bottom .bottom-order a, .slide-1 .bottom-order a{
 		font-size: 1.2rem;
+	}
+	.table-capab .capab-text img{
+		display: none;
+	}
+	.capab-text .inf-parag{
+		height: 100%;
+		width: 100%;
 	}
 }
 @media only screen and (max-width : 495px),(max-height : 520px) {

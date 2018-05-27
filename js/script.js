@@ -170,6 +170,36 @@ function showSlides(n) {
 	slides[slideIndex - 1].style.display = "flex";
 	dots[slideIndex - 1].className += " activ-tab-room";
 }
+//Слайдер помещений
+var roomIndex=1;
+showRoomSlides(roomIndex);
+function plusRoomSlides(n) {
+	showSlides(roomIndex += n);
+}
+function roomSlide(n) {
+	showRoomSlides(roomIndex = n);
+}
+function showRoomSlides(n) {
+	var i;
+	var slides = $(".centr-inf-room");
+	var dots = $(".mnu-room li");
+
+	if (n > slides.length) {
+		roomIndex = 1
+	}
+	if (n < 1){
+		roomIndex = slides.length
+	}
+	for (i = 0; i < slides.length; i++){
+		slides[i].style.display = "none";
+	}
+	for (i = 0; i < dots.length; i++){
+		dots[i].className = dots[i].className.replace("activ-tab-room","");   
+	}
+	slides[roomIndex - 1].style.display = "flex";
+	dots[roomIndex - 1].className += " activ-tab-room";
+}
+//Анимация
 $(window).load(function(){
 	$("#work-other h2").animated("zoomIn", "zoomOut");
 	$(".stage").animated("fadeInLeft", "fadeOutRight");

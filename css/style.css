@@ -745,13 +745,14 @@ header nav a span{
 .centr-inf-room{
 	width: 100%;
 	height: 70%;
-	display: flex;
+	display: none;
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
 }
 .inf-room-img{
 	width: 40%;
+	height: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -761,6 +762,8 @@ header nav a span{
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	margin: 0;
+	padding: 0;
 }
 .inf-room-img span{
 	color: #00BEDF;
@@ -879,12 +882,12 @@ header nav a span{
 	justify-content: space-around;
 	align-items: center;
 }
-.table-capab .act{
+.table-capab .act, .inf-room .act{
 	display: flex;
 }
 .capab-text img{
 	display: block;
-	height: 40%;
+	width: 90%;
 	margin: 0;
 	padding: 0;
 	border-radius: 10px;
@@ -905,7 +908,7 @@ header nav a span{
 .inf-parag span{
 	font-size: 1.2rem;
 	padding: 0 5px 0 0;
-	color: rgba(228,134,113, 1);
+	color: #00BEDF;
 }
 .nmu-capab{
 	background-color: #F7F7F7;
