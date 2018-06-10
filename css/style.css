@@ -329,7 +329,9 @@ header nav a span{
 }
 .info-slide p{
 	width: 80%;
-	text-align: justify;
+	text-align: center;
+	color: #FFFFFF;
+	letter-spacing: 2px;
 }
 .img-blok{
 	display: flex;
@@ -340,6 +342,10 @@ header nav a span{
 	height: 100%;
 }
 .shape{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	position: relative;
 	border-radius: 10px;
 	width: 6vw;
@@ -400,6 +406,17 @@ header nav a span{
 .shape:nth-child(3)::before{
 	animation-direction: alternate-reverse;
 }
+.shape i{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	font-size: 3rem;
+	color: #ffffff;
+}
+
 .bottom-order{
 	height: 7%;
 	width: 22%;
