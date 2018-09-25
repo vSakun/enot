@@ -172,85 +172,8 @@ header nav a span{
 	font-weight: 300;
 	font-size: .8rem;
 }
-.contact-block{
-	width: 100%;
-	margin: 1rem 0;
-}
-.contact-block img{
-	display: block;
-	width: 100%;
-}
-.contact-block .soc-link{
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
-	background: rgba(0,0,0, 0.2);
-	font-size: 2rem;
-	border: 1px solid rgba(0,0,0, 0.2);
-	box-shadow: 0px 0px 10px 1px rgba(0,0,0, 0.2), inset 0 0 15px 0px rgba(0,0,0, 0.2);
-	border-radius: 15px;
-}
-.soc-items{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: center;
-}
-.soc-link .fa{
-	width: 7%;
-	position: relative;
-	cursor: pointer;
-	padding: 1rem;
-	text-shadow: -1px -1px #444, 0 1px 0 #797979;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	transition: text-shadow .5s;
-}
-.fa-vk{
-	color: rgba(80,119,160, .8);
-	transition: color .5s;
-}
-.fa-vk:hover{
-	color: #4D75A1;
-	text-shadow: 1px 1px 1px silver, -1px 1px 1px silver;
-	transition: color .5s, text-shadow .5s;
-}
-.fa-odnoklassniki{
-	color: rgba(250,139,16, .8);
-	transition: color .5s;
-}
-.fa-odnoklassniki:hover{
-	color: #F99017;
-	text-shadow: 1px 1px 1px silver, -1px 1px 1px silver;
-	transition: color .5s, text-shadow .5s;
-}
-.fa-facebook{
-	color: rgba(59,89,152, .8);
-	transition: color .5s;
-}
-.fa-facebook:hover{
-	color: #3B5997;
-	text-shadow: 1px 1px 1px silver, -1px 1px 1px silver;
-	transition: color .5s, text-shadow .5s;
-}
-.fa-instagram{
-	color: rgba(205,72,107, .8);
-	transition: color .5s;
-}
-.fa-instagram:hover{
-	color: #ED414B;
-	text-shadow: 1px 1px 1px silver, -1px 1px 1px silver;
-	transition: color .5s, text-shadow .5s;
-}
-.inf-contact{
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
+.wach{
+	border: 1px solid red;
 }
 h2{
 	position: relative;
