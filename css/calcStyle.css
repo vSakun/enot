@@ -173,7 +173,59 @@ header nav a span{
 	font-size: .8rem;
 }
 .wach{
-	border: 1px solid red;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	margin: 15px 0;
+	border-radius: 10px;
+	border: 1px solid transparent;
+	background: rgba(255,255,255, .3);
+	box-shadow: 1px 1px 3px #000000;
+	cursor: pointer;
+	transition: color .5s, background-color .5s, border .5s, box-shadow .5s;
+}
+.wach:hover{
+	border: 1px solid #FFFFFF;
+	background-color: rgba(103, 189, 221, .3);
+	box-shadow: 1px 1px 3px #FFFFFF;
+	transition: color .5s, background-color .5s, border .5s, box-shadow .5s;
+}
+.wach p{
+	transition: font-size .5s, color .5s;
+}
+.wach:hover p{
+	color:#FFFFFF;
+	font-size: 1.1rem;
+	text-shadow: 1px 1px 1px #00BEDF;
+	transition: font-size .5s, color .5s;
+}
+.rm{
+	background: rgba(0,0,0, .1);
+	box-shadow: inset 0px 0px 2px rgba(255,255,255, .2);
+}
+.rm p{
+	color: rgba(255,255,255, .5);
+}
+.press-w{
+	width: 100%;
+	height: 350px;
+	padding: 10px 0;
+	border-radius: 10px;
+	border-top: 1px solid #00BEDF;
+	border-bottom: 1px solid #00BEDF;
+}
+.fool{
+	width: 100%;
+	padding: 20px 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.fool h2::after, .fool h2::before{
+	display: none;
 }
 h2{
 	position: relative;
