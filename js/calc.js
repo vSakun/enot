@@ -1,4 +1,6 @@
 /*var row = $(".row");*/
 $(".zagl .wach").bind("click", function(e){
-	$(".roomza").fadeOut();
+	$(".selw").removeClass("selw");
+	$(this).addClass("selw");
+	/*$(".roomza").removeClass("roomza");*/
 });
