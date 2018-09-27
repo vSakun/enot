@@ -186,7 +186,7 @@ header nav a span{
 	cursor: pointer;
 	transition: color .5s, background-color .5s, border .5s, box-shadow .5s;
 }
-.wach:hover{
+.wach:hover, .selw{
 	border: 1px solid #FFFFFF;
 	background-color: rgba(103, 189, 221, .3);
 	box-shadow: 1px 1px 3px #FFFFFF;
@@ -195,26 +195,73 @@ header nav a span{
 .wach p{
 	transition: font-size .5s, color .5s;
 }
-.wach:hover p{
+.wach:hover p, .row .wrfoc p, .selw p{
 	color:#FFFFFF;
 	font-size: 1.1rem;
 	text-shadow: 1px 1px 1px #00BEDF;
 	transition: font-size .5s, color .5s;
 }
 .rm{
+	position: relative;
 	background: rgba(0,0,0, .1);
 	box-shadow: inset 0px 0px 2px rgba(255,255,255, .2);
+	cursor: default;
 }
 .rm p{
 	color: rgba(255,255,255, .5);
 }
+.rm:hover .mani, .wrfoc .mani{
+	background: rgba(228,134,113, .7);
+	border: 1px solid rgba(228,134,113, .3);
+	color: #FFFFFF;
+	transform: rotate(0deg);
+	transition: border .5s, background .5s, color .5s, box-shadow .5s, transform .5s;
+}
+.wrfoc{
+	border: 1px solid #FFFFFF;
+	background-color: rgba(103, 189, 221, .3);
+	box-shadow: 1px 1px 3px #FFFFFF;
+	transition: color .5s, background-color .5s, border .5s, box-shadow .5s;
+}
+.mani{
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 10%;
+	height: 50%;
+	background: rgba(228,134,113, .2);
+	border-radius: 20px;
+	cursor: pointer;
+	border: 1px solid rgba(228,134,113, .4);
+	color: rgba(255,255,255, .5);
+	font-size: 1.2rem;
+	box-shadow: 0px 0px 0px rgba(0,0,0, 0);
+	transition: border .5s, background .5s, color .5s;
+}
+.posl{
+	left: 10px;
+}
+.posr{
+	right: 10px;
+}
+.rm .mani:hover{
+	box-shadow: 0px 0px 2px rgba(255,255,255, 1);
+	transform: rotate(180deg);
+	transition: box-shadow .5s, transform .5s;
+}
 .press-w{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
 	width: 100%;
-	height: 350px;
+	min-height: 350px;
 	padding: 10px 0;
 	border-radius: 10px;
-	border-top: 1px solid #00BEDF;
-	border-bottom: 1px solid #00BEDF;
+	border-top: 2px solid rgba(228,134,113, .7);
+	border-bottom: 2px solid rgba(228,134,113, .7);
 }
 .fool{
 	width: 100%;
@@ -224,8 +271,38 @@ header nav a span{
 	justify-content: space-between;
 	align-items: flex-start;
 }
+.fool h2{
+	color: #FFFFFF;
+	text-shadow: 1px 1px 1px #00BEDF;
+}
 .fool h2::after, .fool h2::before{
 	display: none;
+}
+.fool h2 span{
+	color: rgba(228,134,113, 1);
+	text-shadow: 1px 1px 1px #444;
+}
+.price{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2rem;
+	color: rgba(255,255,255, .7);
+	text-shadow: 1px 1px 1px #444;
+}
+.selp{
+	text-shadow: 1px 1px 1px #444;
+	color: rgba(228,134,113, 1);
+}
+.inc{
+	display: none;
+}
+.row .wrfoc .inc{
+	display: block;
+	margin-left: 20px;
+	color: rgba(228,134,113, 1);
+	text-shadow: 1px 1px 1px #444;
 }
 h2{
 	position: relative;
