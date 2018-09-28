@@ -9,6 +9,8 @@ $(document).ready(function(){
 $(".zagl .wach").bind("click", function(e){
 	$(".selw").removeClass("selw");
 	$(this).addClass("selw");
+	$(".inc").text(0);
+	$(".rm").removeClass("wrfoc");
 	/*$(".roomza").removeClass("roomza");*/
 	var childP = String($(this).children().text());
 	var textPost = $(".tepo .press-w");
@@ -34,7 +36,7 @@ $(".zagl .wach").bind("click", function(e){
 	};
 });
 /*Plus room*/
-$(".roomza .posr").bind("click", function(e){
+$(".roomza .posr").bind("click", function(){
 	var numberRoom = Number($(this).siblings(".inc").text());
  	var mnoz = String(numberRoom + 1);
  	$(this).siblings(".inc").text(mnoz);
@@ -48,15 +50,44 @@ $(".roomza .posr").bind("click", function(e){
  			return;
  		};
  	};
+ 	if( naraz == "Кухня"){
+ 		if(numberRoom == 0){
+ 			$(".press-w").eq(1).children(".price").addClass("selp");
+ 		};
+ 		if(numberRoom >> 0){
+ 			return;
+ 		};
+ 	};
+ 	if( naraz == "Санузел"){
+ 		if(numberRoom == 0){
+ 			$(".press-w").eq(2).children(".price").addClass("selp");
+ 		};
+ 		if(numberRoom >> 0){
+ 			return;
+ 		};
+ 	};
 });
 /*Minus room*/
-$(".roomza .posl").bind("click", function(e){
+$(".roomza .posl").bind("click", function(){
 	var numberRoom = Number($(this).siblings(".inc").text());
-	if(numberRoom == 1){
-		$(this).parent().removeClass("wrfoc");
-	}
-	else{
+	if(numberRoom < 1){
+		return;
+	};
+	if(numberRoom >= 1){
 		var mnoz = String(numberRoom - 1);
+		if(Number(mnoz) == 0){
+			$(this).parent().removeClass("wrfoc");
+			var naraz = String($(this).siblings("p[class != inc]").text());
+		 	if( naraz == "Комната"){
+		 		$(".press-w").eq(0).children(".price").removeClass("selp");
+		 	};
+		 	if( naraz == "Кухня"){
+		 		$(".press-w").eq(1).children(".price").removeClass("selp");
+		 	};
+		 	if( naraz == "Санузел"){
+		 		$(".press-w").eq(2).children(".price").removeClass("selp");
+		 	};
+		};
 		$(this).siblings(".inc").text(mnoz);
 	}
 });
