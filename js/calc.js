@@ -47,7 +47,19 @@ $(".roomza .posr").bind("click", function(){
  			$(".press-w").eq(0).children(".price").addClass("selp");
  		};
  		if(numberRoom >> 0){
- 			return;
+ 			var znaRoom = $(".press-w").eq(0).children(".price").text();
+ 			var n;
+ 			var arr = znaRoom.replace(/[^0-9 ]/gi,'').split(' ').filter((e)=>{ return n != '' });
+ 			var priceK = arr[1] * mnoz;
+ 			if(priceK >= 100){
+ 				priceK = priceK - 100;
+ 				var priceR = arr[0] * mnoz + 1;
+ 				console.log(priceR,priceK);
+ 			}
+ 			else{
+ 				var priceR = arr[0] * mnoz;
+ 				console.log(priceR,priceK);
+ 			};
  		};
  	};
  	if( naraz == "Кухня"){
@@ -55,7 +67,19 @@ $(".roomza .posr").bind("click", function(){
  			$(".press-w").eq(1).children(".price").addClass("selp");
  		};
  		if(numberRoom >> 0){
- 			return;
+ 			var znaRoom = $(".press-w").eq(1).children(".price").text();
+ 			var n;
+ 			var arr = znaRoom.replace(/[^0-9 ]/gi,'').split(' ').filter((e)=>{ return n != '' });
+ 			var priceK = arr[1] * mnoz;
+ 			if(priceK >= 100){
+ 				priceK = priceK - 100;
+ 				var priceR = arr[0] * mnoz + 1;
+ 				console.log(priceR,priceK);
+ 			}
+ 			else{
+ 				var priceR = arr[0] * mnoz;
+ 				console.log(priceR,priceK);
+ 			};
  		};
  	};
  	if( naraz == "Санузел"){
@@ -63,7 +87,19 @@ $(".roomza .posr").bind("click", function(){
  			$(".press-w").eq(2).children(".price").addClass("selp");
  		};
  		if(numberRoom >> 0){
- 			return;
+ 			var znaRoom = $(".press-w").eq(2).children(".price").text();
+ 			var n;
+ 			var arr = znaRoom.replace(/[^0-9 ]/gi,'').split(' ').filter((e)=>{ return n != '' });
+ 			var priceK = arr[1] * mnoz;
+ 			if(priceK >= 100){
+ 				priceK = priceK - 100;
+ 				var priceR = arr[0] * mnoz + 1;
+ 				console.log(priceR,priceK);
+ 			}
+ 			else{
+ 				var priceR = arr[0] * mnoz;
+ 				console.log(priceR,priceK);
+ 			};
  		};
  	};
 });
