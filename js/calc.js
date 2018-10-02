@@ -50,16 +50,18 @@ $(".roomza .posr").bind("click", function(){
  			var znaRoom = $(".press-w").eq(0).children(".price").text();
  			var n;
  			var arr = znaRoom.replace(/[^0-9 ]/gi,'').split(' ').filter((e)=>{ return n != '' });
- 			var priceK = arr[1] * mnoz;
+ 			var priceK = (arr[1]/numberRoom) * mnoz;
  			if(priceK >= 100){
  				priceKС = Math.floor(priceK / 100);
  				priceKD = priceK % 100;
- 				var priceR = arr[0] * mnoz + priceKС;
+ 				var priceR = ((arr[0]/numberRoom) * mnoz) + priceKС;
+ 				$(".press-w").eq(0).children(".selp").text(`${priceR}р ${priceKD}к`);
  				console.log(priceR,priceKD);
  			}
  			else{
- 				var priceR = arr[0] * mnoz;
+ 				var priceR = (arr[0]/numberRoom) * mnoz;
  				console.log(priceR,priceK);
+ 				$(".press-w").eq(0).children(".selp").text(`${priceR}р ${priceK}к`);
  			};
  		};
  	};
@@ -71,16 +73,18 @@ $(".roomza .posr").bind("click", function(){
  			var znaRoom = $(".press-w").eq(1).children(".price").text();
  			var n;
  			var arr = znaRoom.replace(/[^0-9 ]/gi,'').split(' ').filter((e)=>{ return n != '' });
- 			var priceK = arr[1] * mnoz;
+ 			var priceK = (arr[1]/numberRoom) * mnoz;
  			if(priceK >= 100){
  				priceKС = Math.floor(priceK / 100);
  				priceKD = priceK % 100;
- 				var priceR = arr[0] * mnoz + priceKС;
+ 				var priceR = ((arr[0]/numberRoom) * mnoz) + priceKС;
+ 				$(".press-w").eq(1).children(".selp").text(`${priceR}р ${priceKD}к`);
  				console.log(priceR,priceKD);
  			}
  			else{
- 				var priceR = arr[0] * mnoz;
+ 				var priceR = (arr[0]/numberRoom) * mnoz;
  				console.log(priceR,priceK);
+ 				$(".press-w").eq(1).children(".selp").text(`${priceR}р ${priceK}к`);
  			};
  		};
  	};
@@ -92,16 +96,18 @@ $(".roomza .posr").bind("click", function(){
  			var znaRoom = $(".press-w").eq(2).children(".price").text();
  			var n;
  			var arr = znaRoom.replace(/[^0-9 ]/gi,'').split(' ').filter((e)=>{ return n != '' });
- 			var priceK = arr[1] * mnoz;
+ 			var priceK = (arr[1]/numberRoom) * mnoz;
  			if(priceK >= 100){
  				priceKС = Math.floor(priceK / 100);
  				priceKD = priceK % 100;
- 				var priceR = arr[0] * mnoz + priceKС;
+ 				var priceR = ((arr[0]/numberRoom) * mnoz) + priceKС;
+ 				$(".press-w").eq(2).children(".selp").text(`${priceR}р ${priceKD}к`);
  				console.log(priceR,priceKD);
  			}
  			else{
- 				var priceR = arr[0] * mnoz;
+ 				var priceR = (arr[0]/numberRoom) * mnoz;
  				console.log(priceR,priceK);
+ 				$(".press-w").eq(2).children(".selp").text(`${priceR}р ${priceK}к`);
  			};
  		};
  	};
@@ -114,6 +120,21 @@ $(".roomza .posl").bind("click", function(){
 	};
 	if(numberRoom >= 1){
 		var mnoz = String(numberRoom - 1);
+		if(Number(mnoz) >> 0){
+			var naraz = String($(this).siblings("p[class != inc]").text());
+			if( naraz == "Комната"){
+				var znaRoom = $(".press-w").eq(0).children(".price").text();
+ 				var n;
+ 				var arr = znaRoom.replace(/[^0-9 ]/gi,'').split(' ').filter((e)=>{ return n != '' });
+ 				var priceK = (arr[1]/numberRoom) * mnoz;
+			};
+			if( naraz == "Кухня"){
+
+			};
+			if( naraz == "Санузел"){
+
+			};
+		};
 		if(Number(mnoz) == 0){
 			$(this).parent().removeClass("wrfoc");
 			var naraz = String($(this).siblings("p[class != inc]").text());
