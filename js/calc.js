@@ -52,9 +52,10 @@ $(".roomza .posr").bind("click", function(){
  			var arr = znaRoom.replace(/[^0-9 ]/gi,'').split(' ').filter((e)=>{ return n != '' });
  			var priceK = arr[1] * mnoz;
  			if(priceK >= 100){
- 				priceK = priceK - 100;
- 				var priceR = arr[0] * mnoz + 1;
- 				console.log(priceR,priceK);
+ 				priceKС = Math.floor(priceK / 100);
+ 				priceKD = priceK % 100;
+ 				var priceR = arr[0] * mnoz + priceKС;
+ 				console.log(priceR,priceKD);
  			}
  			else{
  				var priceR = arr[0] * mnoz;
@@ -72,9 +73,10 @@ $(".roomza .posr").bind("click", function(){
  			var arr = znaRoom.replace(/[^0-9 ]/gi,'').split(' ').filter((e)=>{ return n != '' });
  			var priceK = arr[1] * mnoz;
  			if(priceK >= 100){
- 				priceK = priceK - 100;
- 				var priceR = arr[0] * mnoz + 1;
- 				console.log(priceR,priceK);
+ 				priceKС = Math.floor(priceK / 100);
+ 				priceKD = priceK % 100;
+ 				var priceR = arr[0] * mnoz + priceKС;
+ 				console.log(priceR,priceKD);
  			}
  			else{
  				var priceR = arr[0] * mnoz;
@@ -92,9 +94,10 @@ $(".roomza .posr").bind("click", function(){
  			var arr = znaRoom.replace(/[^0-9 ]/gi,'').split(' ').filter((e)=>{ return n != '' });
  			var priceK = arr[1] * mnoz;
  			if(priceK >= 100){
- 				priceK = priceK - 100;
- 				var priceR = arr[0] * mnoz + 1;
- 				console.log(priceR,priceK);
+ 				priceKС = Math.floor(priceK / 100);
+ 				priceKD = priceK % 100;
+ 				var priceR = arr[0] * mnoz + priceKС;
+ 				console.log(priceR,priceKD);
  			}
  			else{
  				var priceR = arr[0] * mnoz;
