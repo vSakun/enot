@@ -1,3 +1,4 @@
+/*JS & JQ*/
 /*Подгрузка первой страницы комнат*/
 $(document).ready(function(){
 	var textPost = $(".tepo .press-w");
