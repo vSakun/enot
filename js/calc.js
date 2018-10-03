@@ -53,6 +53,7 @@ $(".roomza .posr").bind("click", function(){
  			var arr = Number(znaRoom.replace(/[^0-9.]/gi,''));
  			var priceR = ((arr*mnoz) - (arr*numberRoom)) + arr;
  			console.log(arr, arr*mnoz, arr*numberRoom)
+ 			$(".press-w").eq(0).children(".selp").text(`${priceR}р`);
  		};
  	};
  	if( naraz == "Кухня"){
