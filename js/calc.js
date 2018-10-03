@@ -51,9 +51,10 @@ $(".roomza .posr").bind("click", function(){
  			var znaRoom = $(".press-w").eq(0).children(".price").text();
  			var n;
  			var arr = Number(znaRoom.replace(/[^0-9.]/gi,''));
- 			var priceR = ((arr*mnoz) - (arr*numberRoom)) + arr;
- 			console.log(arr, arr*mnoz, arr*numberRoom)
- 			$(".press-w").eq(0).children(".selp").text(`${priceR}р`);
+ 			var onelove = arr/Number(mnoz);
+ 			var priceR = onelove*Number(mnoz);
+ 			console.log(arr, arr*mnoz, arr*numberRoom);
+ 			$(".press-w").eq(1).children(".selp").text(`${priceR}р`);
  		};
  	};
  	if( naraz == "Кухня"){
@@ -64,8 +65,9 @@ $(".roomza .posr").bind("click", function(){
  			var znaRoom = $(".press-w").eq(1).children(".price").text();
  			var n;
  			var arr = Number(znaRoom.replace(/[^0-9.]/gi,''));
- 			var priceR = ((arr*mnoz) - (arr*numberRoom)) + arr;
- 			console.log(arr, arr*mnoz, arr*numberRoom)
+ 			var onelove = arr/Number(mnoz);
+ 			var priceR = onelove*Number(mnoz);
+ 			console.log(arr, arr*mnoz, arr*numberRoom);
  			$(".press-w").eq(1).children(".selp").text(`${priceR}р`);
  		};
  	};
@@ -77,9 +79,10 @@ $(".roomza .posr").bind("click", function(){
  			var znaRoom = $(".press-w").eq(2).children(".price").text();
  			var n;
  			var arr = Number(znaRoom.replace(/[^0-9.]/gi,''));
- 			var priceR = ((arr*mnoz) - (arr*numberRoom)) + arr;
- 			console.log(arr, arr*mnoz, arr*numberRoom)
- 			$(".press-w").eq(2).children(".selp").text(`${priceR}р`);
+ 			var onelove = arr/Number(mnoz);
+ 			var priceR = onelove*Number(mnoz);
+ 			console.log(arr, arr*mnoz, arr*numberRoom);
+ 			$(".press-w").eq(1).children(".selp").text(`${priceR}р`);
  		};
  	};
 });
